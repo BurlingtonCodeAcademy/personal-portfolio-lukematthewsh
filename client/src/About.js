@@ -1,6 +1,6 @@
 import React from 'react'
 import myPhoto from './images/aboutme.png'
-import hobbyPhoto from './images/hobby.png'
+import hobbyPhoto from './images/hobim.png'
 
 function About(props) {
     return (
