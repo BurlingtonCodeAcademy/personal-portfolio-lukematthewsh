@@ -11,7 +11,8 @@ class Portfolio extends React.Component {
 
         return (
             <div id='portfolio-page'>
-                <h1 id='project-title'>Projects</h1>
+                <h1 id='project-title'>What I've done so far</h1>
+                <div id='under-line'></div>
                 <div id='yelp-project'>
                     <div className='flip-card'>
                         <div className="flip-card-inner">
@@ -49,6 +50,7 @@ class Portfolio extends React.Component {
                             <div id='flip-card-front-remock'>
                                 <div className='projTitle'>Remock</div>
                             </div>
+               
                             <div className='flip-card-back'>
                                 <h2>Remock</h2>
                                 <p className='blurb'> Remock was extaclty what it sounds like. Given screen shots of a webpage we then constructed our own version.</p>

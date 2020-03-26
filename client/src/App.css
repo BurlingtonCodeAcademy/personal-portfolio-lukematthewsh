@@ -11,7 +11,7 @@ body{
   align-items: flex-end;
   flex-direction: row;
   width: 100%;
-  padding: 10px;
+  
   position: fixed;
   top: 0;
   transition: top 0.6s;
@@ -38,7 +38,7 @@ div[id$="-butt"]{
   border: 1px solid black;
   font-family: 'Vollkorn SC', serif;
   margin: 5px;
-  padding: 5px;
+  padding: 2px;
   color:black; 
   font-weight: bold;
 }
@@ -82,7 +82,10 @@ div[id$="-butt"]:hover{
      height: 100vh;
      width: 100%;
    }
-   
+   #innerName{
+     font-size: 30px;
+     font-style: italic;
+   }
    #my-name{
     font-family: 'Vollkorn SC', serif;
      display: flex;
@@ -93,6 +96,7 @@ div[id$="-butt"]:hover{
      grid-area: name;
      padding-left: 5vw;
      padding-top: 10vh;
+     font-size: 0px;
      
    }
    #name-text{
@@ -133,47 +137,36 @@ div[id$="-butt"]:hover{
 
    /*------------------------------------------------------------------*/
    /*About Page Styles*/
+  
    #about-page{
     font-family: 'Vollkorn SC', serif;
       padding-top: 15vh;
-      background-image: 
-       linear-gradient(black, black),
-       ;
-      background-blend-mode: saturation;
-       background-size: 100%;
-       background-repeat: no-repeat;
-      
-       display: grid;
-       grid-template-columns: .5fr 1fr .3fr 1fr .5fr ;
-       grid-template-rows:auto ;
-       grid-template-areas: 
-       ". title . . ."
-       ". img . bio . "
-       ". . . hobbie.  "
-       ". hobbio .  hobimg."
-
-      ;
-       height: auto;
-       width: 100%;
+      display: grid;
+      grid-template-columns: .5fr 1fr .3fr 1fr .5fr ;
+      grid-template-rows:auto ;
+      grid-template-areas: 
+      ". title . . ."
+      ". img . bio . "
+      ". . . hobbie.  "
+      ". hobbio .  hobimg.";
+      height: auto;
+      width: 100%;
      
    }
+
    #about-title{
     font-family: 'Vollkorn SC', serif;
      height: auto;
      display: flex;
      align-items: flex-end;
      grid-area: title;
-     margin: 0;
-     margin-left: 10vw;
-     max-height: 10vh;
-     padding-bottom:10px;
-
+     margin-left:10vw;  
    }
    #about-bio{
     font-family: 'Vollkorn SC', serif;
-     margin-right: 10vw;
-  grid-area: bio; 
-  max-width: 35vw;
+    margin-right: 10vw;
+    grid-area: bio; 
+    max-width: 35vw;
    }
    #about-img-wrapper{
     grid-area:  img;
@@ -196,6 +189,7 @@ div[id$="-butt"]:hover{
      
    }
    #hobby-title{
+
     font-family: 'Vollkorn SC', serif;
     height: auto;
     display: flex;
@@ -271,7 +265,7 @@ div[id$="-butt"]:hover{
   background-color: transparent;
   width: 20vw;
   height: 40vh;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
 /* This container is needed to position the front and back side */
@@ -304,27 +298,32 @@ div[id^='flip-card-front-'], .flip-card-back {
   justify-content: center;
   grid-area: yelp;  
   background-image: url('./images/trees.jpg');
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #flip-card-front-geo {
   display: flex;
   justify-content: center;
   grid-area: geo;
   background-image: url('./images/lighthouse.jpg');
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #flip-card-front-tic {
   display: flex;
   justify-content: center;
   grid-area: tic;
-  background-image: url('./images/bigtrees.jpg')
+  background-image: url('./images/bigtrees.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #flip-card-front-remock {
   display: flex;
   justify-content: center;
   grid-area: remock;
   background-image: url('./images/castle.jpg');
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Style the back side */
 .flip-card-back {
@@ -400,16 +399,84 @@ img[id$='logo']{
   text-align: center;
   font-size: 30px;
   color: white;
-  height: 45vh;
   width: 100%;
-  background-image: url('./images/footerss.jpg');
-  background-repeat: no-repeat;
-  background-size:100%;
-
+  background-color: grey;
+  margin: 0;
 
 }
-#innerFoot{
-  height: 45vh;
-  width: 100%;
-  background-color: rgba(20,20, 20, .7)
+#number{
+  padding: 0;
+  margin: 0;
+}
+#under-line{
+  display:none;
+  width: 20vw;
+  border-bottom: 2px solid black;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 600px){
+  #under-line{
+    display: inline;
+  }
+  #landing-page{
+    background-image: 
+    linear-gradient(black, black),
+    url('./images/phoneLanding.png');
+   background-blend-mode: saturation;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #about-page{
+    
+    align-items: center;
+    text-align:center;
+    margin: 0 !important ;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  h1[id$='-title']{
+    
+    align-items: center;
+    margin: 0 !important ;
+    padding-top: 5vh !important;
+  }
+  div[id$="-img-wrapper"]{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 !important ;
+    padding: 0 !important;
+  }
+  img[id$="-img"]{
+    min-width:50vw;
+    margin: 0 !important ;
+    padding: 0 !important;
+  }
+  div[id$="-bio"]{
+    min-width: 80vw;
+    margin: 0 !important ;
+    padding: 0 !important;
+  }
+  #stack-container{
+    height: 15vh;
+  }
+  img[id$='logo']{
+    display: flex;
+    align-self: center;
+    max-height: 8vh;
+  }
+  #portfolio-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div[id$="-project"]{
+    min-width: 55vw;
+  }
+  .flip-card {
+    width: 50vw;
+  }
 }
