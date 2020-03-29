@@ -470,7 +470,7 @@ img[id$='logo']{
   }
   img[id$="-img"]{
     
-    min-width:50vw !important; 
+    max-height:75vh!important; 
     margin: 0 !important ;
     padding: 0 !important;
   }
