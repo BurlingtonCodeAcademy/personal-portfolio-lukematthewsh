@@ -469,8 +469,8 @@ img[id$='logo']{
     padding: 0 !important;
   }
   img[id$="-img"]{
-    max-height: 60vh;
-    min-width:50vw;
+    
+    min-width:50vw !important; 
     margin: 0 !important ;
     padding: 0 !important;
   }
@@ -501,5 +501,8 @@ img[id$='logo']{
   }
   .flip-card-back {
  font-size: 13px;
+  }
+  .project-button{
+    width: 12vw;
   }
 }
