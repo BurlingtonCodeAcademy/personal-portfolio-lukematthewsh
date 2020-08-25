@@ -159,6 +159,7 @@ div[id$="-butt"]:hover{
       grid-template-areas: 
       ". title . . ."
       ". img . bio . "
+      ". quali quali quali ."
       ". . . hobbie.  "
       ". hobbio .  hobimg.";
       height: auto;
@@ -189,6 +190,16 @@ div[id$="-butt"]:hover{
      max-width:25vw;
      border: 2px solid black;
      
+   }
+
+   #qualifications{
+     padding: 20px;
+    box-shadow: inset 0 0 10px 10px white;
+    margin-top:5vh;
+    margin-bottom: 5vh;
+      text-align: center;
+     background-color: rgb(240, 240, 240);
+     grid-area: quali
    }
    #hobby-img-wrapper{
     grid-area:  hobimg;
@@ -230,11 +241,23 @@ div[id$="-butt"]:hover{
      grid-template-areas: 
      ". title . ."
      ". yelp geo ."
+     ". flyin .  ."
      ". remock tic .";
      height: auto;
      width: 100%;
      margin-bottom: 10vh;
    
+ }
+ #cap{
+   grid-area: cap
+ }
+ #flyin-project{
+  margin-left: 12.5VW;
+  font-family: 'Vollkorn SC', serif;
+  width: 25vw;
+  grid-area: flyin;
+  display: flex;
+  justify-content: center;
  }
  #yelp-project{
   font-family: 'Vollkorn SC', serif;
@@ -305,6 +328,14 @@ div[id^='flip-card-front-'], .flip-card-back {
 }
 
 /* Style the front side (fallback if image is missing) */
+#flip-card-front-flyin {
+  display: flex;
+  justify-content: center;
+  grid-area: yelp;  
+  background-image: url('./images/jump.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #flip-card-front-yelp {
   display: flex;
   justify-content: center;

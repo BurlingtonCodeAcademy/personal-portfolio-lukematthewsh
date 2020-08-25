@@ -16,7 +16,19 @@ function About(props) {
                 <p>In 2018 I started attending the University of Vermont with intetions of being a Bio-Medical engineer. I quickly found out the college flow was not for me. Shortly after my first year at UVM I enrolled in Burlington Code Academy, where I found a true passion for coding!
                 </p>
             </div>
-        
+            <div id = "qualifications">
+                <h1 id = 'qualifications-title'>Qualifications</h1>
+                <br></br>
+                <h4>Studied at Burlington Code Academy</h4>
+                <p>A Software Development Bootcamp, I succesfully completed both the full time and part time courses.</p>
+                <br></br>
+                <h4>Champlain College</h4>
+                <p>Starting Fall 2020, I am majoring in Web Design and Development. </p>
+                <br></br>
+                <h4>Projects</h4>
+                <p>For further information about my qualifications, check out my projects below. </p>
+
+            </div>
             <h1 id='hobby-title'>Fun Stuff</h1>
             <div id='under-line'></div>
             <div id='hobby-bio'>
