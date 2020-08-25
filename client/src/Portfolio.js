@@ -1,9 +1,13 @@
 import React from 'react'
 
 class Portfolio extends React.Component {
-    handleClick = () => {
+    handleClickyelp = () => {
         // do something meaningful, Promises, if/else, whatever, and then
         window.location.assign('http://luke-yelp.herokuapp.com/');
+    }
+    handleClickFlyin = () => {
+        // do something meaningful, Promises, if/else, whatever, and then
+        window.location.assign('https://flyinryanchallenge.herokuapp.com/');
     }
     render() {
 
@@ -24,10 +28,10 @@ class Portfolio extends React.Component {
                             </div>
                             <div className='flip-card-back'>
                                 <h2>Flyin Ryan</h2>
-                                <p className='blurb'>Basically Yelp for the city of Burlington!</p>
-                                <p className="author">Created by: Luke Matthews</p>
+                                <p className='blurb'>The Flyin Ryan Challenge App was my capstone project at Burlington Code Academy. This app was designed to help spread the meaning of Ryan Hawks core values and help indiviuals identify there own values. </p>
+                                <p className="author">Created by: Flyin Ryan Capstone Group</p>
                                 <br></br>
-                                <button className="project-button" onClick={this.handleClick.bind(this)}>Click Me!</button>
+                                <button className="project-button" onClick={this.handleClickFlyin.bind(this)}>Click Me!</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +53,7 @@ class Portfolio extends React.Component {
                                     <p className='blurb'>Basically Yelp for the city of Burlington!</p>
                                     <p className="author">Created by: Luke Matthews</p>
                                     <br></br>
-                                    <button className="project-button" onClick={this.handleClick.bind(this)}>Click Me!</button>
+                                    <button className="project-button" onClick={this.handleClickyelp.bind(this)}>Click Me!</button>
                                 </div>
                             </div>
                         </div>
