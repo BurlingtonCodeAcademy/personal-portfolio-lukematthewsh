@@ -518,6 +518,10 @@ img[id$='logo']{
     align-self: center;
     max-height: 8vh;
   }
+  #flyin-project{
+    margin-left: 0vw;
+    
+   }
   #portfolio-page{
     display: flex;
     flex-direction: column;
